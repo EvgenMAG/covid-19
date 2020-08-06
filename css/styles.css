@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Utilita */
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Остальной код */
+:root {
+  --main-text-color: #4b4f51;
+  --secondary-text-color: #035755;
+  --acent-color: #fb4c47;
+  --main-bg-color: #e5e5e5;
+}
+
+.page {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-nav {
+  display: flex;
+  padding-top: 34px;
+  align-items: center;
+}
+
+.link-nav {
+  display: inline-block;
+}
+
+.hero-button {
+  width: 154px;
+  height: 55px;
+  border: 2px solid #fb4c47;
+
+  border-radius: 46px;
+}
+
+.list.menu {
+  display: flex;
+  margin-right: 40px;
+  margin-left: auto;
+}
+
+.link-current:hover {
+  color: var(--acent-color);
+}
